@@ -24,7 +24,11 @@
                 clifford: '#da373d',
                 primaryColor: '#FFDC26',
                 secondaryColor: '#FFF9F4',
-                thirdColor: '#FFF9F4',
+                thirdColor: '#F9DF8A',
+                cardgrLt: '#F8CCFB',
+                cardgrRt: '#AED2FD',
+                cardgr1Lt: '#FFF9F4',
+                cardgr1Rt: '#F9DF8A',
               },
               fontFamily :{
                 adlam : ["ADLaM Display", "serif"],
@@ -32,6 +36,12 @@
               },
               backgroundImage: {
                 'hero-pattern': "url('assets/cat-big.png')",
+                'trending-pattern': "url('assets/cute-pet-mid.png')",
+                'card-1': "url('assets/cute-dog-mid.png')",
+                'card-2': "url('assets/cute-pet-mid.png')",
+                },
+              trendingBgSz: {
+                'size' : '100px' ,
                 }
             }
           }
@@ -45,9 +55,9 @@
 
                 <div class="flex flex-1 justify-between">
                     <div class="flex justify-center items-center gap-2">
-                        <img class="" src="assets/logo-header.png" alt="">
-                        <h1 class="hidden lg:inline font-sora text-2xl font-light">Browse <span class="text-primaryColor">4</span> Pets</h1>
-                      </div>
+                      <img class="" src="assets/logo-header.png" alt="">
+                      <h1 class="hidden lg:inline font-sora text-2xl font-light">Browse <span class="text-primaryColor">4</span> Pets</h1>
+                    </div>
                   <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost md:hidden ">
                       <svg
@@ -99,7 +109,161 @@
     </header>
 
     <main>
+      <section class="w-11/12 lg:w-10/12 mx-auto mt-36 mb-32">
+        <h1 class="font-adlam text-4xl lg:text-5xl mb-12">Browse By Categories</h1>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5">
+          <div class="h-80 bg-thirdColor rounded-lg md:rounded-xl flex flex-col items-center justify-center">
+            <img class="bg-white p-5 rounded-full mb-7" src="assets/dog-cartoon.png" alt="">
+            <h3 class=" text-2xl font-adlam mb-2">DOG</h3>
+            <p class="text-xl">6 items</p>
+          </div>
+          <div class="h-80 bg-thirdColor rounded-lg md:rounded-xl flex flex-col items-center justify-center">
+            <img class="bg-white p-5 rounded-full mb-7" src="assets/fish-cartoon.png" alt="">
+            <h3 class=" text-2xl font-adlam mb-2">FISH</h3>
+            <p class="text-xl">100+ items</p>
+          </div>
+          <div class="h-80 bg-thirdColor rounded-lg md:rounded-xl flex flex-col items-center justify-center">
+            <img class="bg-white p-5 rounded-full mb-7" src="assets/cat-cartoon.png" alt="">
+            <h3 class=" text-2xl font-adlam mb-2">CAT</h3>
+            <p class="text-xl">26 items</p>
+          </div>
+          <div class="h-80 bg-thirdColor rounded-lg md:rounded-xl flex flex-col items-center justify-center">
+            <img class="bg-white p-5 rounded-full mb-7" src="assets/bird-cartoon.png" alt="">
+            <h3 class=" text-2xl font-adlam mb-2">BIRD</h3>
+            <p class="text-xl">50+ items</p>
+          </div>
+          <div class="h-80 bg-thirdColor rounded-lg md:rounded-xl flex flex-col items-center justify-center">
+            <img class="bg-white p-5 rounded-full mb-7" src="assets/mouse-cartoon.png" alt="">
+            <h3 class=" text-2xl font-adlam mb-2">MOUSE</h3>
+            <p class="text-xl">30 items</p>
+          </div>
+          <div class="h-80 bg-thirdColor rounded-lg md:rounded-xl flex flex-col items-center justify-center">
+            <img class="bg-white p-5 rounded-full mb-7" src="assets/rabbit-cartoon.png" alt="">
+            <h3 class=" text-2xl font-adlam mb-2">RABBIT</h3>
+            <p class="text-xl">20 items</p>
+          </div>
+        </div>
+      </section>
 
+      <section class="bg-secondaryColor w-full mt-36 mb-32">
+        
+        <div class="w-11/12 lg:w-10/12 mx-auto py-28">
+          
+          <h1 class="font-adlam text-4xl lg:text-5xl mb-12">Trending Pet Products</h1>
+          <div class="grid gap-3 md:gap-5 grid-cols-2 lg:grid-cols-5 lg:grid-rows-3 ">
+
+            <div class="col-span-2 lg:row-span-3 lg:col-span-2 bg-thirdColor bg-trending-pattern bg-[length:30%] lg:bg-[length:40%] bg-no-repeat bg-right-bottom p-10 rounded-xl">
+              <h1 class="font-adlam text-2xl lg:text-4xl">T-shirt for Dogs</h1>
+              <p class="text-lg mt-5 mb-8">Discover a world of treats,toys and <br> essentials handpicked for</p>
+              <button class="font-sora bg-white cursor-pointer text-xl md:rounded-lg rounded-md text-black border border-primaryColor px-4 py-1 hover:bg-white hover:border transition">Shop Now</button>
+            </div>
+
+            <div class="flex justify-start gap-3 bg-white p-3 border border-gray-200 rounded-xl">
+              <img class="bg-secondaryColor rounded-lg p-3 lg:p-5" src="assets/pet-couch.png" alt="">
+              <div class="space-y-1">
+                <p class="text-sm lg:text-base font-sora font-semibold"><i class="fa-solid fa-star text-amber-400"></i> 4.8</p>
+                <h2 class="text-base lg:text-xl font-adlam">Pet Bed</h2>
+                <p class="text-base font-sora font-semibold">$39.99</p>
+              </div>
+            </div>
+
+            <div class="flex justify-start gap-3 bg-white p-3 border border-gray-200 rounded-xl hidden lg:inline-flex">
+              <img class="bg-secondaryColor rounded-lg p-5" src="assets/dog-cartoon.png" alt="">
+              <div class="space-y-1">
+                <p class="text-sm lg:text-base font-sora font-semibold"><i class="fa-solid fa-star text-amber-400"></i> 4.8</p>
+                <h2 class="text-base lg:text-xl font-adlam">Puppy</h2>
+                <p class="text-base font-sora font-semibold">$49.99</p>
+              </div>
+            </div>
+            
+            <div class="flex justify-start gap-3 bg-white p-3 border border-gray-200 rounded-xl">
+              <img class="bg-secondaryColor rounded-lg p-5" src="assets/cat-cartoon.png" alt="">
+              <div class="space-y-1">
+                <p class="text-sm lg:text-base font-sora font-semibold"><i class="fa-solid fa-star text-amber-400"></i> 4.8</p>
+                <h2 class="text-base lg:text-xl font-adlam">Cat</h2>
+                <p class="text-sm lg:text-base font-sora font-semibold">$59.99</p>
+              </div>
+            </div>
+
+            <div class="flex justify-start gap-3 bg-white p-3 border border-gray-200 rounded-xl">
+              <img class="bg-secondaryColor rounded-lg p-5" src="assets/mouse-cartoon.png" alt="">
+              <div class="space-y-1">
+                <p class="text-sm lg:text-base font-sora font-semibold"><i class="fa-solid fa-star text-amber-400"></i> 4.8</p>
+                <h2 class="text-base lg:text-xl font-adlam">Mouse</h2>
+                <p class="text-sm lg:text-base font-sora font-semibold">$29.99</p>
+              </div>
+            </div>
+
+            <div class="flex justify-start gap-3 bg-white p-3 border border-gray-200 rounded-xl">
+              <img class="bg-secondaryColor rounded-lg p-5" src="assets/rabbit-cartoon.png" alt="">
+              <div class="space-y-1">
+                <p class="text-sm lg:text-base font-sora font-semibold"><i class="fa-solid fa-star text-amber-400"></i> 4.8</p>
+                <h2 class="text-base lg:text-xl font-adlam">Rabbit</h2>
+                <p class="text-sm lg:text-base font-sora font-semibold">$69.99</p>
+              </div>
+            </div>
+
+            <div class="flex justify-start gap-3 bg-white p-3 border border-gray-200 rounded-xl">
+              <img class="bg-secondaryColor rounded-lg p-5" src="assets/bird-cartoon.png" alt="">
+              <div class="space-y-1">
+                <p class="text-sm lg:text-base font-sora font-semibold"><i class="fa-solid fa-star text-amber-400"></i> 4.8</p>
+                <h2 class="text-base lg:text-xl font-adlam">Bird</h2>
+                <p class="text-sm lg:text-base font-sora font-semibold">$79.99</p>
+              </div>
+            </div>
+
+            <div class="flex justify-start gap-3 bg-white p-3 border border-gray-200 rounded-xl">
+              <img class="bg-secondaryColor rounded-lg p-5" src="assets/pet-couch.png" alt="">
+              <div class="space-y-1">
+                <p class="text-sm lg:text-base font-sora font-semibold"><i class="fa-solid fa-star text-amber-400"></i> 4.8</p>
+                <h2 class="text-base lg:text-xl font-adlam">Pet Bed</h2>
+                <p class="text-sm lg:text-base font-sora font-semibold">$39.99</p>
+              </div>
+            </div>
+
+            <div class="flex justify-start gap-3 bg-white p-3 border border-gray-200 rounded-xl">
+              <img class="bg-secondaryColor rounded-lg p-5" src="assets/cat-cartoon.png" alt="">
+              <div class="space-y-1">
+                <p class="text-sm lg:text-base font-sora font-semibold"><i class="fa-solid fa-star text-amber-400"></i> 4.8</p>
+                <h2 class="text-base lg:text-xl font-adlam">Cat</h2>
+                <p class="text-sm lg:text-base font-sora font-semibold">$69.99</p>
+              </div>
+            </div>
+
+            <div class="flex justify-start gap-3 bg-white p-3 border border-gray-200 rounded-xl">
+              <img class="bg-secondaryColor rounded-lg p-5" src="assets/rabbit-cartoon.png" alt="">
+              <div class="space-y-1">
+                <p class="text-sm lg:text-base font-sora font-semibold"><i class="fa-solid fa-star text-amber-400"></i> 4.8</p>
+                <h2 class="text-base lg:text-xl font-adlam">Rabbit</h2>
+                <p class="text-sm lg:text-base font-sora font-semibold">$19.99</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="w-11/12 lg:w-10/12 mx-auto mb-32">
+        <h1 class="font-adlam text-4xl lg:text-5xl mb-12">Everyday low Price</h1>
+
+        <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-6">
+
+          <div class="col-span-1 lg:col-span-2 bg-gradient-to-r from-cardgrLt to-cardgrRt rounded-xl py-10 pl-10 lg:py-20 lg:pl-20 relative h-[500px]">
+            <p class="text-xl font-sora font-semibold mt-16">Under Price</p>
+            <h2 class="text-4xl lg:text-5xl font-adlam my-3">Pet Grooming Mitt</h2>
+            <h3 class="text-2xl font-adlam my-3 text-white">( Easy Hair Removal )</h3>
+            <h1 class="font-adlam text-4xl lg:text-6xl mt-12 mb-10">$7.99</h1>
+              <img class="absolute bottom-0 right-1 lg:-bottom-6 lg:right-2 w-[50%] lg:w-[40%]" src="assets/cute-dog-mid.png" alt="">
+          </div>
+
+          <div class="col-span-1 lg:col-span-1 bg-gradient-to-br from-cardgr1Lt to-cardgr1Rt py-10 pl-10 lg:py-16 lg:pl-14 rounded-xl relative h-[500px]">
+            <h2 class="text-4xl font-adlam">T-Shirt for Dogs</h2>
+            <h1 class="font-adlam text-4xl lg:text-6xl mt-6 mb-10 text-amber-400">$7.99</h1>
+              <img class="absolute bottom-0 right-2 lg:bottom-0 lg:right-2 w-[50%] lg:w-[55%]" src="assets/cute-pet-mid.png" alt="">
+          </div>
+
+        </div>
+      </section>
     </main>
 
     <footer>
