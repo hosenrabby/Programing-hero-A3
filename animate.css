@@ -1,0 +1,17 @@
+
+
+.animate {
+  animation: hadingColor 3s infinite alternate;
+}
+
+@keyframes hadingColor {
+  0% {
+    color: #FFDC26;
+  }
+  50% {
+    color: gray;
+  }
+  100% {
+    color: green;
+  }
+}
