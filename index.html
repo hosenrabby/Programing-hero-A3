@@ -37,8 +37,7 @@
               backgroundImage: {
                 'hero-pattern': "url('assets/cat-big.png')",
                 'trending-pattern': "url('assets/cute-pet-mid.png')",
-                'card-1': "url('assets/cute-dog-mid.png')",
-                'card-2': "url('assets/cute-pet-mid.png')",
+                'faq-pattern': "url('assets/faqbg.png')",
                 },
               trendingBgSz: {
                 'size' : '100px' ,
@@ -50,9 +49,9 @@
 </head>
 <body>
     <header>
+      <!-- Nav Section -->
         <section class="bg-secondaryColor">
             <div class="navbar flex justify-between w-11/12 lg:w-10/12 mx-auto">
-
                 <div class="flex flex-1 justify-between">
                     <div class="flex justify-center items-center gap-2">
                       <img class="" src="assets/logo-header.png" alt="">
@@ -96,9 +95,9 @@
                 </div>
             </div>
         </section>
-
+<!--============= Banner Section ================-->
         <section class="w-11/12 lg:w-10/12 mx-auto">
-            <div class=" bg-hero-pattern bg-no-repeat bg-center lg:bg-right-bottom bg-contain h-[750px]">
+            <div class=" bg-hero-pattern bg-no-repeat bg-center lg:bg-right-bottom bg-contain h-[600px] lg:h-[750px]">
                 <div class="w-full md:6/12">
                     <h1 class="font-adlam text-4xl lg:text-6xl lg:leading-snug mt-24 lg:mt-48">Pamper Your Pet, <br> Because They Deserve <br> the Bes</h1>
                     <p class="mt-3 mb-4 font-sora text-lg lg:text-xl lg:leading-[36px] font-light">Discover a world of treats, toys, and essentials handpicked for <br> your furry friends. Shop now and make tails wag with joy!</p>
@@ -109,44 +108,51 @@
     </header>
 
     <main>
-      <section class="w-11/12 lg:w-10/12 mx-auto mt-36 mb-32">
+      <!--============= Pet Catagory Section ================-->
+      <section class="w-11/12 lg:w-10/12 mx-auto mt-0 lg:mt-36 mb-32">
         <h1 class="font-adlam text-4xl lg:text-5xl mb-12">Browse By Categories</h1>
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5">
+
           <div class="h-80 bg-thirdColor rounded-lg md:rounded-xl flex flex-col items-center justify-center">
             <img class="bg-white p-5 rounded-full mb-7" src="assets/dog-cartoon.png" alt="">
             <h3 class=" text-2xl font-adlam mb-2">DOG</h3>
             <p class="text-xl">6 items</p>
           </div>
+
           <div class="h-80 bg-thirdColor rounded-lg md:rounded-xl flex flex-col items-center justify-center">
             <img class="bg-white p-5 rounded-full mb-7" src="assets/fish-cartoon.png" alt="">
             <h3 class=" text-2xl font-adlam mb-2">FISH</h3>
             <p class="text-xl">100+ items</p>
           </div>
+
           <div class="h-80 bg-thirdColor rounded-lg md:rounded-xl flex flex-col items-center justify-center">
             <img class="bg-white p-5 rounded-full mb-7" src="assets/cat-cartoon.png" alt="">
             <h3 class=" text-2xl font-adlam mb-2">CAT</h3>
             <p class="text-xl">26 items</p>
           </div>
+
           <div class="h-80 bg-thirdColor rounded-lg md:rounded-xl flex flex-col items-center justify-center">
             <img class="bg-white p-5 rounded-full mb-7" src="assets/bird-cartoon.png" alt="">
             <h3 class=" text-2xl font-adlam mb-2">BIRD</h3>
             <p class="text-xl">50+ items</p>
           </div>
+
           <div class="h-80 bg-thirdColor rounded-lg md:rounded-xl flex flex-col items-center justify-center">
             <img class="bg-white p-5 rounded-full mb-7" src="assets/mouse-cartoon.png" alt="">
             <h3 class=" text-2xl font-adlam mb-2">MOUSE</h3>
             <p class="text-xl">30 items</p>
           </div>
+
           <div class="h-80 bg-thirdColor rounded-lg md:rounded-xl flex flex-col items-center justify-center">
             <img class="bg-white p-5 rounded-full mb-7" src="assets/rabbit-cartoon.png" alt="">
             <h3 class=" text-2xl font-adlam mb-2">RABBIT</h3>
             <p class="text-xl">20 items</p>
           </div>
+
         </div>
       </section>
-
+<!--============= Trending Product Section ================-->
       <section class="bg-secondaryColor w-full mt-36 mb-32">
-        
         <div class="w-11/12 lg:w-10/12 mx-auto py-28">
           
           <h1 class="font-adlam text-4xl lg:text-5xl mb-12">Trending Pet Products</h1>
@@ -242,10 +248,46 @@
           </div>
         </div>
       </section>
-
+<!--============= FAQ Section ================-->
+      <section class="w-11/12 lg:w-10/12 mx-auto bg-faq-pattern bg-no-repeat bg-fixed bg-center">
+        
+        <div class="w-full md:w-full lg:w-8/12 py-60 rounded-md lg:rounded-xl opacity-60">
+          <h1 class="font-adlam text-4xl lg:text-5xl mb-12">Frequently Asked Questions ???</h1>
+          <div class="bg-base-100  border-gray-600 rounded-xl">
+            <div class="collapse collapse-plus border-b-2 border-gray-600">
+              <input type="radio" name="my-accordion-3" checked="checked" />
+              <div class="collapse-title text-xl md:text-2xl lg:text-3xl font-adlam">Are your pet products vet-approved ?</div>
+              <div class="collapse-content">
+                <p class="font-sora text-xl">Yes, we source our pet food and health products from trusted, vet-approved brands.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus border-b-2 border-gray-600">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-xl md:text-2xl lg:text-3xl font-adlam">Do you have physical stores, or are you only online ?</div>
+              <div class="collapse-content">
+                <p class="font-sora text-xl">We are an online-only store, but we ensure fast and reliable delivery to your doorstep.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus border-b-2 border-gray-600">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-xl md:text-2xl lg:text-3xl font-adlam">What payment methods do you accept ?</div>
+              <div class="collapse-content">
+                <p class="font-sora text-xl">We accept credit/debit cards, PayPal, Google Pay, Apple Pay, and other secure payment options.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus border-b-2 border-gray-600">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-xl md:text-2xl lg:text-3xl font-adlam">Can I modify or cancel my order after placing it ?</div>
+              <div class="collapse-content">
+                <p class="font-sora text-xl">Orders can be modified or canceled within 1 hour of placement. Contact our support team immediately.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+<!--============= Discount Section ================-->
       <section class="w-11/12 lg:w-10/12 mx-auto mb-32">
         <h1 class="font-adlam text-4xl lg:text-5xl mb-12">Everyday low Price</h1>
-
         <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-6">
 
           <div class="col-span-1 lg:col-span-2 bg-gradient-to-r from-cardgrLt to-cardgrRt rounded-xl py-10 pl-10 lg:py-20 lg:pl-20 relative h-[500px]">
@@ -264,10 +306,70 @@
 
         </div>
       </section>
+<!--============= subscription Section ================-->
+      <section>
+        <div class="relative w-11/12 lg:w-10/12 mx-auto bg-secondaryColor flex flex-col md:flex-row lg:flex-row justify-start items-center rounded-lg lg:rounded-xl px-6 lg:px-[11rem] py-4 lg:py-8">
+          <div>
+            <img class="px-20 md:px-14" src="assets/pngwing.com (1).png" alt="">
+          </div>
+          <div class="pl-0 md:pl-16 text-center md:text-start lg:text-start">
+            <h1 class="text-2xl lg:text-5xl font-adlam mb-5">Get Pawsome News!</h1>
+            <p class="text-md lg:text-2xl font-sora">Exclusive training tips, ticks, product deals and more.</p>
+            <form class="" action="">
+              <label class="my-7 text-lg input input-bordered input-warning flex items-center gap-2">
+                <svg 
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                  class="h-4 w-4 opacity-70">
+                  <path
+                    d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z" />
+                  <path
+                    d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" />
+                </svg>
+                <input type="text" class="grow py-2" placeholder="Enter Email" />
+              </label>
+              </label>
+              <button class="font-sora bg-primaryColor cursor-pointer text-xl md:rounded-lg rounded-md text-black border border-primaryColor px-4 py-1 hover:bg-white hover:border transition" type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
-
-    <footer>
-
+<!--============= Footer Section ================-->
+    <footer class=" bg-yellow-200 py-12 -mt-64 lg:-mt-72">
+<!--============= branding footer Section ================-->
+      <div class="mt-72 w-11/12 lg:w-10/12 mx-auto flex flex-col md:flex-row gap-5 justify-between items-start">
+        <div>
+          <div class="flex justify-start items-center gap-2">
+            <img class="" src="assets/logo-footer.png" alt="">
+            <h1 class="font-sora text-2xl font-light">Browse <span class="text-primaryColor">4</span> Pets</h1>
+          </div>
+          <p class="font-sora text-lg mt-2">Discover a world of treats, toys, and <br> essentials handpicked for your <br> furry friends</p>
+        </div>
+<!--============= footer nav Section ================-->
+        <div>
+          <nav class="flex flex-col gap-3 text-xl">
+            <h6 class="font-adlam footer-title ">Find Your Pets</h6>
+            <a class="link link-hover">Find a pet</a>
+            <a class="link link-hover">Breeds</a>
+            <a class="link link-hover">About Us</a>
+            <a class="link link-hover">Contact us</a>
+          </nav>
+        </div>
+<!--============= social links Section ================-->
+        <div>
+          <nav class="space-y-6">
+            <h6 class="font-adlam footer-title text-xl">Follow Us</h6>
+            <div class="flex justify-between gap-3 text-2xl">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </nav>
+        </div>
+      </div>
     </footer>
 </body>
 </html>
